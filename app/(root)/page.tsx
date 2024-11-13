@@ -29,6 +29,7 @@ export default async function Home({searchParams}: {searchParams: Promise<{query
 
         <ul className="mt-7 card_grid">
           {posts?.length > 0 ? (
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             posts.map((post: StartupTypeCard, index: number) => (
               <StartupCard key={post?._id} post={post}/>
             ))
